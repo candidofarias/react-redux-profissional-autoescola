@@ -1,0 +1,48 @@
+body {
+  background-color: #cc1a1a;
+}
+
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #03a9f4;
+  color: #fff;
+}
+.app-bar__container {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 600px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  height: 100vh;
+  width: 260px;
+  background-color: #fff;
+  transition: left 0.5s ease-in-out;
+}
+.menu--open {
+  left: 0;
+}
+.menu__head {
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 12px;
+}
+.menu__head__button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.menu__li {
+  list-style: none;
+}
